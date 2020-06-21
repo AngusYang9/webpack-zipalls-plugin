@@ -5,7 +5,7 @@
   <a href="https://www.npmjs.com/package/webpack-zipalls-plugin"><img alt="npm" src="https://img.shields.io/npm/dm/webpack-zipalls-plugin?color=orange"></a>
 </p>
 
-**Webpack plugin to zip all output files.**
+**Webpack 4 plugin to zip all output files.**
 
 ## Getting Started
 
