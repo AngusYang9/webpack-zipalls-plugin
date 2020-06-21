@@ -5,7 +5,7 @@ const webpack = require('webpack');
 const JSZip = require('jszip');
 const webpackConfig = require('../../webpack.config');
 
-describe('Only spec', () =>{
+describe('Exec', () =>{
   it('options with a filename, zip correctly', function (done) {
     webpack(webpackConfig({filename: 'bundle'}), (err, stats) => {
       fs.readFile(path.join(process.cwd(), 'dist/bundle.zip'), (err, data) => {
@@ -27,6 +27,5 @@ describe('Only spec', () =>{
       expect(e.message === 'filename is necessary!').to.be.true;
       done();
     }
-    
   });
 })

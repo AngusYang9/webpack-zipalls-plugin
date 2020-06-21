@@ -8,7 +8,8 @@
   ],
   "scripts": {
     "test": "nyc --reporter=lcov --reporter=text-summary mocha test/unit/specs",
-    "coverage": "nyc report --reporter=text-lcov | coveralls"
+    "coverage": "nyc report --reporter=text-lcov | coveralls",
+    "dev": "webpack --config src/webpack.config.js"
   },
   "repository": {
     "type": "git",

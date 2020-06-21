@@ -1,7 +1,10 @@
 const path = require('path');
-const WebpackZipallsPlugin = require('../lib/index');
 
 module.exports = function (options) {
+  delete require.cache[require.resolve('../lib/index.js')];
+  delete require.cache[require.resolve(path.resolve(process.cwd(), 'node_modules/webpack/package.json'))];
+  const WebpackZipallsPlugin = require('../lib/index');
+  
   return {
     entry: './src/index.js',
     output: {
